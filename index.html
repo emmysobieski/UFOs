@@ -12,15 +12,15 @@
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
 	<div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
-<!--Creating the Title -->
+<!--Creating the Website Title -->
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+    <h1 class="display-4">The Truth is Out There</h1>
     </div>
 <!--Creating Sample Article -->
     <div class="container-fluid">
@@ -40,37 +40,41 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-            <form>
+            <form class="bg-dark"> <!--DID I DO THIS CLASS RIGHT?-->
                 <p>Filter Search</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
+                <ul class="bg-dark list-group"> <!--DID I DO THIS CLASS RIGHT?-->
+                    <li class="bg-dark list-group-item"> <!--DID I DO THIS CLASS RIGHT?-->
                         <label for="date">Enter Date</label>
                         <input type="text" placeholder="1/10/2010" id="datetime" />
                     </li>
-                    <li class="list-group-item">
-                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    <li class="bg-dark list-group-item"> <!--DID I DO THIS CLASS RIGHT?-->
+                        <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
                     </li>
                 </ul>
               </form>
           </div>
 <!--Creating Table to hold filtered data -->
-<div class="col-md-9">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-            <th>Date</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Country</th>
-            <th>Shape</th>
-            <th>Duration</th>
-            <th>Comments</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+        <div class="col-md-9">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            </table>
         </div>
-      </div>
+    </div>
+</div>
+<!--Adding links to D3, data.js and app.js to pull data onto website-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+      <script src="static/js/data.js"></script>
+      <script src="static/js/app.js"></script>
 </body>
 </html>
