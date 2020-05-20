@@ -11,7 +11,7 @@ function buildTable(data) {
     // and append a row and cells for each value in the row
     data.forEach((dataRow) => {
       // Append a row to the table body
-      let row = tbody.append("tr");
+      let row = tbody.append("tr"); //SAME TO HERE
   
       // Loop through each field in the dataRow and add
       // each value as a table cell (td)
@@ -26,6 +26,7 @@ function buildTable(data) {
 function handleClick() {
     // Grab the datetime value from the filter
     let date = d3.select("#datetime").property("value");
+    alert(date);  //test code
     let filteredData = tableData;
     
      // Check to see if a date was entered and filter the

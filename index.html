@@ -40,15 +40,28 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-            <form class="bg-dark"> <!--DID I DO THIS CLASS RIGHT?-->
+            <form class="bg-dark"> <!--Formatting dark background-->
                 <p>Filter Search</p>
-                <ul class="bg-dark list-group"> <!--DID I DO THIS CLASS RIGHT?-->
-                    <li class="bg-dark list-group-item"> <!--DID I DO THIS CLASS RIGHT?-->
-                        <label for="date">Enter Date</label>
-                        <input type="text" placeholder="1/10/2010" id="datetime" />
+                <ul class="bg-dark list-group"> <!--Formatting dark background-->
+                    <li class="bg-dark list-group-item"> <!--Formatting dark background-->
+                        <label for="date">Filter by Date</label> <!--Create Date filter-->
+                        <input type="text" placeholder="1/1/2010" id="datetime" />
                     </li>
-                    <li class="bg-dark list-group-item"> <!--DID I DO THIS CLASS RIGHT?-->
-                        <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                    <li class="bg-dark list-group-item"> <!--Formatting dark background-->
+                        <label for="city">Filter by City</label> <!--Create City filter-->
+                        <input type="text" placeholder="benton" id="city" />
+                    </li>
+                    <li class="bg-dark list-group-item"> <!--Formatting dark background-->
+                        <label for="state">Filter by State</label> <!--Create State filter-->
+                        <input type="text" placeholder="ar" id="state" />
+                    </li>
+                    <li class="bg-dark list-group-item"> <!--Formatting dark background-->
+                        <label for="country">Filter by Country</label> <!--Create Country filter-->
+                        <input type="text" placeholder="us" id="country" />
+                    </li>
+                    <li class="bg-dark list-group-item"> <!--Formatting dark background-->
+                        <label for="shape">Filter by Shape</label> <!--Create Shape filter-->
+                        <input type="text" placeholder="circle" id="shape" />
                     </li>
                 </ul>
               </form>
