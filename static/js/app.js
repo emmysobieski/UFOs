@@ -31,7 +31,7 @@ function updateFilters() {
 
   // Save the element, value, and id of the filter that was changed
   // identify selector user is currently in
-  let selector = d3.select(this);  // this needs an event listener
+  let selector = d3.select(this);  
   let value = selector.property("value");
   let filtering = selector.attr("id");
 
@@ -53,7 +53,7 @@ function filterTable() {
   let filteredData = tableData
   // Loop through all of the filters and keep any data that
   // matches the filter values
-  console.log(Object.entries(filters));
+  // console.log(Object.entries(filters));
   Object.entries(filters).forEach(function([filtering,value]){
     filteredData = filteredData.filter(row => row[filtering] === value);});
   // Finally, rebuild the table using the filtered Data
